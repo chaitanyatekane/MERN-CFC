@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+</head>
+<body>
+
+    <h1 id="date">   </h1>
+
+    <script>
+        let d = document.getElementById("date");
+
+        let count1 = 0;
+        let count2 = 0;
+        let count3 = 0;
+
+        setInterval(function(){
+            d.innerHTML = new Date();
+            count1 += 10  
+            count2 += 15  
+            count3 += 20  
+            count1 = count1 % 256 
+            count2 = count2 % 256 
+            count3 = count3 % 256 
+            d.style.color = `rgb(${count1}, ${count2}, ${count3})`;
+                     
+        }, 100);
+
+    </script>
+    
+</body>
+</html>
