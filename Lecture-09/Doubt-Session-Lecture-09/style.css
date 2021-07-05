@@ -1,0 +1,20 @@
+/* 
+Class --> .
+Id --> #
+*/
+
+#excited {
+    color: yellowgreen;
+}
+
+.goodmorning {
+    color: turquoise;
+}
+
+div#div1 {
+    color: violet;
+}
+
+div.div2 {
+    color: brown;
+}
